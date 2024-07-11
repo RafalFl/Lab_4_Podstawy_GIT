@@ -29,3 +29,7 @@ if [ "$1" == "--init" ]; then
   git clone https://github.com/your-username/your-repo.git
   export PATH=$PATH:$(pwd)/your-repo
 fi
+if [ "$1" == "--init" ]; then
+  git clone https://github.com/your-username/your-repo.git
+  export PATH=$PATH:$(pwd)/your-repo
+fi
