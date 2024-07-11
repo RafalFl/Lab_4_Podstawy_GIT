@@ -25,3 +25,7 @@ elif [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
   echo "--logs n, -l n : Create n log files"
   echo "--help, -h   : Show help"
 fi
+if [ "$1" == "--init" ]; then
+  git clone https://github.com/your-username/your-repo.git
+  export PATH=$PATH:$(pwd)/your-repo
+fi
