@@ -40,3 +40,6 @@ if [ "$1" == "--error" ] || [ "$1" == "-e" ]; then
     echo "error${i}/error${i}.txt created by $0 on $(date)" > error/error${i}.txt
   done
 fi
+  echo "--init      : Clone the repository and set PATH"
+  echo "--error, -e : Create 100 error files"
+  echo "--error n, -e n : Create n error files"
