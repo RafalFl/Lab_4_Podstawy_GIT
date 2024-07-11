@@ -33,3 +33,10 @@ if [ "$1" == "--init" ]; then
   git clone https://github.com/your-username/your-repo.git
   export PATH=$PATH:$(pwd)/your-repo
 fi
+if [ "$1" == "--error" ] || [ "$1" == "-e" ]; then
+  num=${2:-100}
+  mkdir -p error
+  for i in $(seq 1 $num); do
+    echo "error${i}/error${i}.txt created by $0 on $(date)" > error/error${i}.txt
+  done
+fi
